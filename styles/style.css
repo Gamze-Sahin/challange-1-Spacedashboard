@@ -3,7 +3,7 @@
 :root {
 	--main-color: #284b63;
 	--color-dark: #1D2231;
-	--text-grey: #8390A2;
+	--text-grey: #284b63;
 }
 
 * {
@@ -133,3 +133,61 @@ main {
 	background: #f2f2f2;
 	min-height: calc(100vh - 90px);
 }
+
+.cards {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 2rem;
+	margin-top: 1rem;
+}
+
+.card-single {
+	display: flex;
+	justify-content: space-between;
+	background: #fff;
+	padding: 2rem;
+	border-radius: 1px;
+}
+
+.card-single div:last-child span {
+	font-size: 3rem;
+	color: var(--main-color);
+}
+
+.card-single div:first-child span {
+	color: var(--text-grey);
+}
+
+
+.recent-grid {
+	margin-top: 2rem;
+	display: grid;
+	grid-gap: 1rem;
+	grid-template-columns: 50% auto;
+
+}
+
+.card {
+	background: #fff;
+	border-radius: 1px;
+	height: 390px;
+}
+
+.card-header,
+.card-body {
+	padding: 0.5rem;
+	
+}
+
+.card-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+
+
