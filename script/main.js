@@ -1,3 +1,5 @@
+window.onload=function(){
+
 let labels1 = ['Fruits', 'Nuts', 'Chicken', 'Beef', 'Peanut butter' ];
 let data1 = [80, 99, 75, 80, 55];
 let colors1 = ['#49A9EA', '#36CAAB', '#34495E', '#B370CF'];
@@ -48,3 +50,5 @@ let chart2 = new Chart(myChart2, {
         }
     }
 });
+
+}
