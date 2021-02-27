@@ -23,6 +23,7 @@
 	height: 100%;
 	background: var(--main-color);
 	z-index: 100;
+	transition: width 300ms;
 }
 
 .sidebar-brand {
@@ -53,7 +54,7 @@
 	font-size: 1.1rem;
 }
 
-.sidebar-menu a.active {
+.sidebar-menu a .active {
 	background: #fff;
 	padding-top: 1rem;
 	padding-bottom: 1rem;
@@ -65,11 +66,41 @@
 	padding-right: 1rem;
 }
 
+#nav-toggle:checked + .sidebar {
+	width: 70px;
+}
+
+#nav-toggle:checked + .sidebar .sidebar-brand,
+#nav-toggle:checked + .sidebar li {
+	padding-left: 1rem;
+	text-align: center;
+}
+
+#nav-toggle:checked + .sidebar li a {
+	padding-left: 0rem;
+}
+
+#nav-toggle:checked + .sidebar .sidebar-brand h2 span:last-child,
+#nav-toggle:checked + .sidebar li a span:last-child {
+	display: none;
+}
+
+#nav-toggle:checked ~ .main-content {
+	margin-left: : 70px;
+}
+
+#nav-toggle:checked ~ .main-content header {
+	width: : calc(100% - 70px);
+	left: 70px;
+}
+
 .main-content {
+	transition: margin-left 300ms;
 	margin-left: 345px;
 }
 
 header {
+	background: #fff;
 	display: flex;
 	justify-content: space-between;
 	padding: 1rem 1.5rem;
@@ -79,6 +110,11 @@ header {
 	width: calc(100% - 345px);
 	top: 0;
 	z-index: 100;
+	transition: left 300ms;
+}
+
+#nav-toggle {
+	display: none;
 }
 
 header h2 {
@@ -189,5 +225,7 @@ table {
 	border-collapse: collapse;
 }
 
-
+@media only screen and (max-width: 1200px) {
+	
+}
 
