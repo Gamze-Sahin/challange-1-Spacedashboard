@@ -19,6 +19,8 @@ body {
 	font-family: 'Quicksand', san-serif;
 }
 
+/*Sidebar voor de menu*/
+
 .sidebar {
 	width: 345px;
 	position: fixed;
@@ -71,6 +73,8 @@ body {
 	padding-right: 1rem;
 }
 
+/*Nav toggle voor de sidebar*/
+
 #nav-toggle:checked + .sidebar {
 	width: 70px;
 }
@@ -107,6 +111,8 @@ body {
 	margin-left: 345px;
 }
 
+/*Header*/
+
 header {
 	background: #fff;
 	display: flex;
@@ -135,6 +141,8 @@ header label span {
 	padding-right: 1rem;
 }
 
+/*Zoekbalk*/
+
 .search-wrapper {
 	border: 1px solid #ccc;
 	border-radius: 5px;
@@ -157,6 +165,8 @@ header label span {
 	outline: none;
 }
 
+/*Gebruikers info*/
+
 .user-wrapper {
 	display: flex;
 	align-items: center;
@@ -171,6 +181,8 @@ header label span {
 	display: inline-block;
 	color: var(--text-grey);
 }
+
+/*main inhoud*/
 
 main {
 	margin-top: 85px;
@@ -207,6 +219,7 @@ main {
 	color: var(--text-grey);
 }
 
+/*Charts Card*/
 
 .recent-grid {
 	margin-top: 2rem;
@@ -233,6 +246,10 @@ main {
 	justify-content: space-between;
 	align-items: center;
 }
+
+/*Media queries*/
+
+/*Scherm met 1200px*/
 
 @media only screen and (max-width: 1200px) {
 	.sidebar {
@@ -266,6 +283,8 @@ main {
 	}
 }
 
+/*Scherm met 960px*/
+
 @media only screen and (max-width: 960px) {
 	.cards {
 		grid-template-columns: repeat(3, 1fr);
@@ -275,6 +294,8 @@ main {
 		grid-template-columns: 50% 50%;
 	}
 }
+
+/*Scherm met 768px*/
 
 @media only screen and (max-width: 768px) {
 	.cards {
@@ -358,6 +379,8 @@ main {
 	}
 
 }
+
+/*Scherm met 560px*/
 
 @media only screen and (max-width: 560px) {
 	.cards {
