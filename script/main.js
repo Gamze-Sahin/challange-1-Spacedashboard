@@ -47,7 +47,7 @@ let chart2 = new Chart(myChart2, {
     },
     options: {
         title: {
-            text: "Do you like dougnuts?",
+            text: "Minerals on Mars",
             display: false
         }
     }
@@ -56,13 +56,13 @@ let chart2 = new Chart(myChart2, {
 
 //random nummers speed, fuel, distance
 document.getElementById("demo").innerHTML =
-Math.floor(Math.random() * 10000) + 1;
+Math.floor(Math.random() * (10000 - 5000)) + 5000;
 
 document.getElementById("demo2").innerHTML =
-Math.floor(Math.random() * 100000) + 2;
+Math.floor(Math.random() * (100000 - 30000)) + 30000;
 
 document.getElementById("demo3").innerHTML =
-Math.floor(Math.random() * 60) + 1;
+Math.floor(Math.random() * (60 - 20)) + 20;
 
 // Countdown reistijd
 var countDownDate = new Date("Jul 7, 2021 18:48:33").getTime();
